@@ -2,8 +2,8 @@ import selenium_task.currency_scrapper as cs
 from selenium_task.optimization import CurrencyOpt as co
 from flask import  request
 from flask import Flask
-import logging
-import sys 
+
+
 #import requests
 from datetime import datetime
 import time
@@ -11,7 +11,7 @@ import time
 from apscheduler.scheduler import Scheduler
 from crontab import CronTab
 app = Flask(__name__)
-logging.basicConfig(filename='scrapper_app.log', filemode='w', format='%(message)s')
+
 def process():
     arr=cs.CurrencyStatistic.initialise_banks()
     res=cs.CurrencyStatistic.process(arr)
@@ -44,11 +44,11 @@ def index():
     
     scheduler = Scheduler()
     scheduler.start()
-    logging.debug('Scheduler started : ', scheduler.running)
+  
     scheduler.add_cron_job(co.calculateTotal, minute="55", hour="23", day="*",month="*", day_of_week="6"),  
-    sys.stdout.write('Scheduler started : ', scheduler.running)
+  
     scheduler.add_cron_job(monthly_update, day="last", hour="23",minute="55",month="*", day_of_week="*") 
-    sys.stdout.write(" CRON JOBS: ", scheduler.get_jobs())
+   
     if result:
         times=result['time'].split()
         scheduler.add_cron_job(process, minute=times[0], hour=times[1], day=times[2],month=times[3], day_of_week=times[4] )
