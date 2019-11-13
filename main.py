@@ -45,9 +45,9 @@ def index():
     scheduler = Scheduler()
     scheduler.start()
     logging.debug('Scheduler started : ', scheduler.running)
-    scheduler.add_cron_job(co.calculateTotal, minute="*", hour="*", day="*",month="*", day_of_week="2"),  
+    scheduler.add_cron_job(co.calculateTotal, minute="55", hour="23", day="*",month="*", day_of_week="6"),  
     sys.stdout.write('Scheduler started : ', scheduler.running)
-    scheduler.add_cron_job(monthly_update, day="last", hour=23,minute=55) 
+    scheduler.add_cron_job(monthly_update, day="last", hour="23",minute="55",month="*", day_of_week="*") 
     sys.stdout.write(" CRON JOBS: ", scheduler.get_jobs())
     if result:
         times=result['time'].split()
