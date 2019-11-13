@@ -17,7 +17,7 @@ jsonschema==3.0.2
 
 
 python-crontab==2.3.9
-requests==2.2.0
+requests==2.20.0
 
 
 selenium==3.141.0
