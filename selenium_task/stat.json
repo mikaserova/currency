@@ -1,0 +1,84 @@
+{
+   
+    "2019/10/02": {
+        "Privat": {
+            "EUR_buy": "27.1",
+            "EUR_sell": "27.85",
+            "USD_buy": "24.9",
+            "USD_sell": "25.5",
+            "RUB_buy": "0.353",
+            "RUB_sell": "0.389"
+        },
+        "Oschad": {
+            "EUR_buy": "",
+            "EUR_sell": "",
+            "USD_buy": "",
+            "USD_sell": "",
+            "RUB_buy": "",
+            "RUB_sell": ""
+        },
+        "Aval": {
+            "EUR_buy": "26.60",
+            "EUR_sell": "27.80",
+            "USD_buy": "24.50",
+            "USD_sell": "25.35",
+            "RUB_buy": "0.372",
+            "RUB_sell": "0.385"
+        }
+    },
+    
+    "2019/10/03": {
+        "Privat": {
+            "EUR_buy": "27.1",
+            "EUR_sell": "27.9",
+            "USD_buy": "24.9",
+            "USD_sell": "25.5",
+            "RUB_buy": "0.355",
+            "RUB_sell": "0.391"
+        },
+        "Oschad": {
+            "EUR_buy": "26.8000",
+            "EUR_sell": "28.1000",
+            "USD_buy": "24.8000",
+            "USD_sell": "25.8500",
+            "RUB_buy": "0.2300",
+            "RUB_sell": "0.3900"
+        },
+        "Aval": {
+            "EUR_buy": "26.90",
+            "EUR_sell": "27.60",
+            "USD_buy": "24.75",
+            "USD_sell": "25.10",
+            "RUB_buy": "0.372",
+            "RUB_sell": "0.390"
+        }
+    },
+    
+    "2019/10/04": {
+        "Privat": {
+            "EUR_buy": "26.9",
+            "EUR_sell": "27.7",
+            "USD_buy": "24.75",
+            "USD_sell": "25.25",
+            "RUB_buy": "0.355",
+            "RUB_sell": "0.39"
+        },
+        "Oschad": {
+            "EUR_buy": "26.7000",
+            "EUR_sell": "27.8000",
+            "USD_buy": "24.5000",
+            "USD_sell": "25.3500",
+            "RUB_buy": "0.2300",
+            "RUB_sell": "0.3920"
+        },
+        "Aval": {
+            "EUR_buy": "26.70",
+            "EUR_sell": "27.30",
+            "USD_buy": "24.45",
+            "USD_sell": "24.80",
+            "RUB_buy": "0.370",
+            "RUB_sell": "0.380"
+        }
+    },
+    
+}

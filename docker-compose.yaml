@@ -1,0 +1,54 @@
+version: '3'
+services:
+  webapp:
+    build:
+      context: ../C_base # Use an image built from the specified dockerfile in the current directory.
+      dockerfile: Dockerfile
+    depends_on: 
+      - couch_db
+    restart: unless-stopped
+    ports:
+      - 5000:5000
+    networks: # Networks to join (Services on the same network can communicate with each other using their name)
+      - currency
+ 
+  scrapper:
+    container_name: scr
+    build:
+      context: . # Use an image built from the specified dockerfile in the current directory.
+      dockerfile: Dockerfile
+    depends_on: 
+      - couch_db
+    ports:
+      - 4444:5000
+    
+     
+    restart: unless-stopped
+    networks: # Networks to join (Services on the same network can communicate with each other using their name)
+      - currency
+ 
+  couch_db:
+    container_name: cdb 
+    build:
+      context: db
+      dockerfile: Dockerfile
+    
+    ports: 
+        - 8091-8096:8091-8096
+        - 11210-11211:11210-11211
+    restart: always
+    networks: # Networks to join (Services on the same network can communicate with each other using their name)
+      - currency
+
+  # chrome:
+  #   container_name: ch
+  #   image: selenium/standalone-chrome  
+  #   ports: 
+  #     - 4443:4444
+  #   restart: always
+  #   networks: # Networks to join (Services on the same network can communicate with each other using their name)
+  #     - currency
+ 
+networks:
+  currency:
+    

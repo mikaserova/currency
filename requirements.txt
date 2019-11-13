@@ -1,0 +1,24 @@
+APScheduler==2.1.2
+couchbase==2.5.8
+
+entrypoints==0.3
+Flask==1.1.1
+
+
+httplib2==0.14.0
+
+Jinja2==2.10.1
+jsonschema==3.0.2
+
+
+
+# numpy==1.17.2
+
+
+
+python-crontab==2.3.9
+requests==2.2.0
+
+
+selenium==3.141.0
+
