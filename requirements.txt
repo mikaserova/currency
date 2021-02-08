@@ -5,7 +5,7 @@ entrypoints==0.3
 Flask==1.1.1
 
 
-httplib2==0.14.0
+httplib2==0.19.0
 
 Jinja2==2.10.1
 jsonschema==3.0.2
